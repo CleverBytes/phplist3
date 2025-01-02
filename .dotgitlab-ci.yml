@@ -30,7 +30,7 @@ before_script:
 script:
   - vendor/bin/phpLint ./public_html
   - vendor/bin/behat
-
+.phpcs.cache
 after_failure:
   - echo "Failures detected. Outputing additional logs:"
   - sudo cat /var/log/apache2/error.log
